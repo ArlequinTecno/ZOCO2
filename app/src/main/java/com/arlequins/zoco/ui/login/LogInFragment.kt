@@ -24,7 +24,7 @@ class LogInFragment : Fragment() {
         _binding = FragmentLogInBinding.inflate(inflater, container, false)
 
         binding.loginButton.setOnClickListener {
-            findNavController().navigate(LogInFragmentDirections.actionLogInFragmentToNavAllProducts())
+            goToLogin()
         }
         binding.loginToSignupTextView.setOnClickListener{
             findNavController().navigate(LogInFragmentDirections.actionNavLogInToSignUpFragment())
@@ -33,6 +33,9 @@ class LogInFragment : Fragment() {
         return binding.root
     }
 
+    private fun goToLogin(){
+        findNavController().navigate(LogInFragmentDirections.actionLogInFragmentToNavAllProducts())
+    }
     override fun onResume() {
         super.onResume()
         (activity as AppCompatActivity).supportActionBar!!.hide()
