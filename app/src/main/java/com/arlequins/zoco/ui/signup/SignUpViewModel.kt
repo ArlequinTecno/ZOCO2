@@ -34,7 +34,7 @@ class SignUpViewModel : ViewModel() {
         else if (email.length<=12 ||
             "@" !in email ||
             email.subSequence(email.length-12, email.length) != "@udea.edu.co"){
-            _errorMsg.value = "El correo digitado esta mal escrito o no es una es un correo institucional de la UdeA"
+            _errorMsg.value = "El correo digitado esta mal escrito o no es un correo institucional de la UdeA"
         }
         else if (phone.length != 10 ){
             _errorMsg.value = "El número de telefono no es válido"

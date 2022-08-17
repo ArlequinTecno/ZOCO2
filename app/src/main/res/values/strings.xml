@@ -15,8 +15,8 @@
 
     <string name="hint_name">Nombre</string>
     <string name="hint_last_name">Apellidos</string>
-    <string name="hint_email">Correo electrónico</string>
-    <string name="hint_phone">Teléfono</string>
+    <string name="hint_email">Correo electrónico Institucional</string>
+    <string name="hint_phone">Celular</string>
     <string name="hint_passwd">Contraseña</string>
     <string name="hint_repasswd">Repetir contraseña</string>
 

@@ -24,7 +24,7 @@ class SignUpFragment : Fragment() {
 
         _binding = FragmentSignUpBinding.inflate(inflater, container, false)
 
-        signUpViewModel.errorMsg.observe(viewLifecycleOwner){ msg ->
+        signUpViewModel.errorMsg.observe(viewLifecycleOwner){ msg: String? ->
             showErrorMessage(msg)
         }
         signUpViewModel.registerSuccess.observe(viewLifecycleOwner){

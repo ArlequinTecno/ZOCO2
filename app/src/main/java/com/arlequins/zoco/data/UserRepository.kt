@@ -16,9 +16,24 @@ class UserRepository {
                      email: String,
                      phone: String,
                      passwd: String,
-                     repasswd: String): ResourceRemote<String>{
+                     repasswd: String): ResourceRemote<String?>{
         return try{
             val result = auth.createUserWithEmailAndPassword(email, passwd).await()
+            ResourceRemote.Success(data = result.user?.uid)
+        }
+        catch(e: FirebaseAuthException){
+            Log.e("Register", e.localizedMessage)
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+        catch (e:FirebaseNetworkException){
+            Log.e("NetwordRegister", e.localizedMessage)
+            ResourceRemote.Error(message = e.localizedMessage)
+        }
+    }
+
+    suspend fun logInUser(email: String, passwd: String): ResourceRemote<String?> {
+        return try{
+            val result = auth.signInWithEmailAndPassword(email, passwd).await()
             ResourceRemote.Success(data = result.user?.uid)
         }
         catch(e: FirebaseAuthException){
