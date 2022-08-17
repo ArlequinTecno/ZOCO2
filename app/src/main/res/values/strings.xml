@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ZOCO</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_all_products">Todos los productos</string>
+    <string name="menu_category">Categorías</string>
+    <string name="menu_my_products">Mis productos</string>
+
+    <string name="title_log_in">LOG IN</string>
+    <string name="title_sign_up">SIGN UP</string>
+
+    <string name="hint_name">Nombre</string>
+    <string name="hint_last_name">Apellidos</string>
+    <string name="hint_email">Correo electrónico</string>
+    <string name="hint_phone">Teléfono</string>
+    <string name="hint_passwd">Contraseña</string>
+    <string name="hint_repasswd">Repetir contraseña</string>
+
+    <string name="button_log_in">Iniciar sesión</string>
+    <string name="button_sign_up">Registrarse</string>
+
+    <string name="paragraph_welcome">Bienvenido a ZOCO.</string>
+    <string name="paragraph_acount">¿No tienes una cuenta?</string>
+    <string name="paragraph_signUp_here"><u>Registrate aquí</u></string>
+    <string name="paragraph_forgot_password"><u>Recuperar Contraseña</u></string>
+</resources>

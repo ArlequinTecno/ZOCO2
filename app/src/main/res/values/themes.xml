@@ -1,0 +1,50 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.ZOCO" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/primary</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.ZOCO.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ZOCO.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.ZOCO.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="titleTextView">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/archivo_black</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="h1" parent="titleTextView">
+        <item name="android:textColor">@color/text_h1</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:fontFamily">@font/calistoga</item>
+    </style>
+
+    <style name="h2" parent="h1">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/text_h2</item>
+    </style>
+    <style name="h3" parent="h1">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/text_h3</item>
+    </style>
+    <style name="h3b" parent="h3">
+        <item name="android:textColor">@color/text_h3b</item>
+    </style>
+</resources>
