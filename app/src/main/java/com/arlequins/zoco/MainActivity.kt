@@ -9,7 +9,6 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.arlequins.zoco.databinding.ActivityMainBinding
 
 
@@ -19,16 +18,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        val screenSplash = installSplashScreen()
 
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        screenSplash.setKeepOnScreenCondition{
-            false
-        }
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
@@ -50,7 +45,12 @@ class MainActivity : AppCompatActivity() {
         }*/
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_all_products, R.id.nav_category, R.id.nav_my_products
+                R.id.nav_index,
+                R.id.nav_category,
+                R.id.nav_my_products,
+                R.id.nav_notifications,
+                R.id.nav_settings,
+                R.id.nav_about_zoco
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

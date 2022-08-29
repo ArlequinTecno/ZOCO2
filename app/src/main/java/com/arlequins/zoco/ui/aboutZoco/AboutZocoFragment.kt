@@ -1,4 +1,4 @@
-package com.arlequins.zoco.ui.settings
+package com.arlequins.zoco.ui.aboutZoco
 
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
@@ -8,14 +8,13 @@ import android.view.View
 import android.view.ViewGroup
 import com.arlequins.zoco.R
 
-class SettingsFragment : Fragment() {
-    private lateinit var viewModel: SettingsViewModel
+class AboutZocoFragment : Fragment() {
+    private lateinit var viewModel: AboutZocoViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_settings, container, false)
+        return inflater.inflate(R.layout.fragment_about_zoco, container, false)
     }
-
 }

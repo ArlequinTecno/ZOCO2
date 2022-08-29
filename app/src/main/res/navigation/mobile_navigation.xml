@@ -6,10 +6,10 @@
     app:startDestination="@id/nav_log_in">
 
     <fragment
-        android:id="@+id/nav_all_products"
+        android:id="@+id/nav_index"
         android:name="com.arlequins.zoco.ui.allProducts.AllProductsFragment"
-        android:label="@string/menu_all_products"
-        tools:layout="@layout/fragment_all_products" />
+        android:label="@string/menu_index"
+        tools:layout="@layout/fragment_index" />
 
     <fragment
         android:id="@+id/nav_category"
@@ -29,7 +29,7 @@
         tools:layout="@layout/fragment_log_in" >
         <action
             android:id="@+id/action_logInFragment_to_nav_all_products"
-            app:destination="@id/nav_all_products" />
+            app:destination="@id/nav_index" />
         <action
             android:id="@+id/action_nav_log_in_to_signUpFragment"
             app:destination="@id/nav_sign_up" />
@@ -43,4 +43,19 @@
             android:id="@+id/action_signUpFragment_to_nav_log_in"
             app:destination="@id/nav_log_in" />
     </fragment>
+    <fragment
+        android:id="@+id/nav_about_zoco"
+        android:name="com.arlequins.zoco.ui.aboutZoco.AboutZocoFragment"
+        android:label="@string/menu_about_zoco"
+        tools:layout="@layout/fragment_about_zoco" />
+    <fragment
+        android:id="@+id/nav_notifications"
+        android:name="com.arlequins.zoco.ui.notifications.NotificationsFragment"
+        android:label="@string/menu_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.arlequins.zoco.ui.settings.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
 </navigation>

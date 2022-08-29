@@ -1,7 +1,7 @@
-package com.arlequins.zoco.ui.notificatios
+package com.arlequins.zoco.ui.settings
 
 import androidx.lifecycle.ViewModel
 
-class ConfigurationsViewModel : ViewModel() {
+class SettingsViewModel : ViewModel() {
     // TODO: Implement the ViewModel
 }

@@ -6,12 +6,16 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
 
-    <string name="menu_all_products">Todos los productos</string>
+    <string name="menu_index">Inicio</string>
     <string name="menu_category">Categorías</string>
     <string name="menu_my_products">Mis productos</string>
+    <string name="menu_notifications">Notificaciones</string>
+    <string name="menu_settings">Configuraciones</string>
+    <string name="menu_about_zoco">Acerca de ZOCO</string>
 
     <string name="title_log_in">LOG IN</string>
     <string name="title_sign_up">SIGN UP</string>
+
 
     <string name="hint_name">Nombre</string>
     <string name="hint_last_name">Apellidos</string>
